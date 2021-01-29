@@ -93,6 +93,11 @@ header {
   margin-bottom: 10px;
 }
 
+.sort {
+  position: relative;
+  left: 938px;
+}
+
 
 @media screen and (max-width: 992px) {
   
