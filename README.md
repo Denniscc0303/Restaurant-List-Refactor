@@ -1,10 +1,10 @@
 # 我的餐廳清單
 
-一個使用 Node.js + Express 打造的餐廳美食網站，提供使用者管理自己的餐廳清單，如新增、修改、刪除、瀏覽餐廳資料等功能，並且可依照餐廳名稱進行搜尋。
+一個使用 Node.js + Express 打造的餐廳美食網站，提供使用者管理自己的餐廳清單，如新增、修改、刪除、瀏覽餐廳資料等功能，並且可依照餐廳名稱進行搜尋和依照餐廳名稱、類別、地區排序。
 
 ## 專案畫面
 
-![image](https://github.com/Denniscc0303/Images/blob/master/2-3%20A6%20%E6%89%93%E9%80%A0%E9%A4%90%E5%BB%B3%E6%B8%85%E5%96%AECRUD_index_Dennis_20210124.JPG)
+![image](https://github.com/Denniscc0303/Images/blob/master/2-3%20A8%20%E6%89%93%E9%80%A0%E9%A4%90%E5%BB%B3%E6%B8%85%E5%96%AECRUD_%E9%87%8D%E6%A7%8B_Dennis_20210129.JPG)
 
 ![image](https://github.com/Denniscc0303/Images/blob/master/2-3%20A6%20%E6%89%93%E9%80%A0%E9%A4%90%E5%BB%B3%E6%B8%85%E5%96%AECRUD_detail_Dennis_20210124.JPG)
 
@@ -23,6 +23,7 @@
 5. 使用者可以瀏覽全部所有餐廳
 6. 使用者可以修改一家餐廳的資訊
 7. 使用者可以刪除一家餐廳
+8. 使用者可以依餐廳名稱、類別、地區排序
 
 ## Environment SetUp - 環境建置
 
@@ -34,13 +35,13 @@
 1. 打開你的 terminal，Clone 此專案至本機電腦
 
 ```
-git clone https://github.com/Denniscc0303/Restaurant-List-CRUD.git
+git clone https://github.com/Denniscc0303/Restaurant-List-Refactor.git
 ```
 
 2. 開啟終端機(Terminal)，進入存放此專案的資料夾
 
 ```
-cd Restaurant-List-CRUD
+cd Restaurant-List-Refactor
 ```
 
 3. 安裝 npm 套件
