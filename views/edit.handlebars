@@ -1,0 +1,101 @@
+<h1 class="mb-1 restaurant-new-title">編輯餐廳至清單</h1>
+<form action="/restaurants/{{ restaurant._id }}?_method=PUT" method="POST">
+  <div class="container ml-5 mb-5">
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Name:</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" class="form-control" placeholder="name" name="name" value="{{ restaurant.name }}"
+          style="width: 30vw;" required>
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="form-label" style="width: 5vw;">Name_en:</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" class="form-control" placeholder="name_en" name="name_en" value="{{ restaurant.name_en }}"
+          style="width: 30vw;">
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="form-label" style="width: 5vw;">Category:</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" class="form-control" placeholder="category" name="category" value="{{ restaurant.category }}"
+          style="width: 30vw;">
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Image:</label>
+      </div>
+      <div class="col-auto">
+        <input type="url" class="form-control" placeholder="image" name="image" value="{{ restaurant.image }}"
+          style="width: 30vw;">
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Location:</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" class="form-control" placeholder="location" name="location" value="{{ restaurant.location }}"
+          style="width: 30vw;" required>
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Phone:</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" class="form-control" placeholder="phone" name="phone" value="{{ restaurant.phone }}"
+          style="width: 30vw;" required>
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Google_map:</label>
+      </div>
+      <div class="col-auto">
+        <input type="url" class="form-control" placeholder="google_map" name="google_map"
+          value="{{ restaurant.google_map }}" style="width: 30vw;">
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Rating:</label>
+      </div>
+      <div class="col-auto">
+        <input type="number" class="form-control" placeholder="rating" name="rating" value="{{ restaurant.rating }}"
+          style="width: 30vw;" style="width: 30vw;" step="0.1" min="0" max="5">
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-start m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Description:</label>
+      </div>
+      <div class="col-auto">
+        <textarea type="text" class="form-control" placeholder="description" name="description" value=""
+          style="width: 30vw; height: 30vh; overflow: auto">
+          {{ restaurant.description }}
+        </textarea>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mr-3">
+      <button type="submit" class="btn btn-secondary btn-sm m-1">Save</button>
+      <a href="/"><button type="button" class="btn btn-secondary btn-sm m-1">Back</button></a>
+    </div>
+
+  </div>
+</form>

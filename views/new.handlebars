@@ -1,0 +1,89 @@
+<h1 class="mb-1 restaurant-new-title">新增餐廳至清單</h1>
+<form action="/restaurants" method="POST">
+  <div class="container ml-5 mb-5">
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Name:</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" class="form-control" name="name" style="width: 30vw;" required>
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="form-label" style="width: 5vw;">Name_en:</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" class="form-control" name="name_en" style="width: 30vw;">
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="form-label" style="width: 5vw;">Category:</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" class="form-control" name="category" style="width: 30vw;">
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Image:</label>
+      </div>
+      <div class="col-auto">
+        <input type="url" class="form-control" name="image" style="width: 30vw;">
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Location:</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" class="form-control" name="location" style="width: 30vw;" required>
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Phone:</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" class="form-control" name="phone" style="width: 30vw;" required>
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Google_map:</label>
+      </div>
+      <div class="col-auto">
+        <input type="url" class="form-control" name="google_map" style="width: 30vw;">
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Rating:</label>
+      </div>
+      <div class="col-auto">
+        <input type="number" class="form-control" name="rating" style="width: 30vw;" step="0.1" min="0" max="5">
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-start m-3">
+      <div class="col-auto">
+        <label class="col-form-label" style="width: 5vw;">Description:</label>
+      </div>
+      <div class="col-auto">
+        <textarea type="text" class="form-control" name="description" style="width: 30vw; height: 30vh; overflow: auto">
+        </textarea>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="btn btn-outline-primary">Create</button>
+    </div>
+  </div>
+</form>
